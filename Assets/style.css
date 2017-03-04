@@ -16,10 +16,7 @@ footer {
       45deg, 
       #C04848, #480048
     );
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0; 
+    width: 100%; 
     margin-top: 8%;
     padding: 20px 20px;
     border-top: solid #78909c 10px;
