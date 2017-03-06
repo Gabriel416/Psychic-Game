@@ -6,7 +6,6 @@ var guessesLeft = 10;
 var wins = 0;
 var losses = 0;
 
-alert("Refresh your page everytime you win to play again");
 
 
 //First assign letter and store it in console
@@ -14,7 +13,10 @@ var computerChoice = letters[Math.floor(Math.random() * letters.length)];
 console.log(computerChoice);
 
 
-
+// function randomize {
+//     		var scramble = letters[Math.floor(Math.random.() * letters.length)];
+//     		console.log(scramble);
+//     	}
 
 
 //Whenever the user presses a key, trigger the following sequence of events.
@@ -23,9 +25,9 @@ document.onkeypress = function(event) {
     var userGuess = event.key;
 
 
-
     if (userGuess === computerChoice) {
-        wins = 0;
+    	computerChoice = letters[Math.floor(Math.random() * letters.length)];
+		console.log(computerChoice);
         wins++;
         attempts = [];
         guessesLeft = 10;
