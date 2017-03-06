@@ -31,7 +31,6 @@ document.onkeypress = function(event) {
         wins++;
         attempts = [];
         guessesLeft = 10;
-        losses = 0;
     } else {
         guessesLeft--;
     }
